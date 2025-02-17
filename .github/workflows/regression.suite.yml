@@ -29,9 +29,9 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest -s --html=report.html --self-contained-html  # Fixed pytest HTML report syntax
-
-      - name: Upload report
+          pytest
+          
+      - name: upload report
         uses: actions/upload-artifact@v4
         with:
           name: pytest-report
